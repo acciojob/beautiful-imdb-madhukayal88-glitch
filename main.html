@@ -1,16 +1,58 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
-</head>
+  <meta charset="UTF-8">
+  <title>IMDb Movie Detail</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f0f0f0;
+    }
 
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px 20px;
+    }
+
+    .moviePic {
+      height: 400px;
+      width: 270px;
+      opacity: 0.95;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .moviePic:hover {
+      transform: scale(1.05);
+    }
+
+    .movieDetail {
+      position: relative;
+      top: 30px;
+      width: 60%;
+      text-align: center;
+      font-size: 18px;
+      color: #333;
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+
+  <div class="container">
+    <img src="your-movie-poster.jpg" alt="Movie Poster" class="moviePic">
+    <p class="movieDetail">
+      In a world torn by war and secrets, one hero rises to uncover the truth. This gripping thriller blends emotion, suspense, and stunning visuals to deliver a cinematic experience like no other.
+    </p>
+  </div>
 
 </body>
-
 </html>
